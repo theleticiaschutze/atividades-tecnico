@@ -1,0 +1,259 @@
+@font-face {
+    font-family: 'Space Mono';
+    src: url('../fontes/SpaceMono-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Space Mono';
+    src: url('../fontes/SpaceMono-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Space Mono';
+    src: url('../fontes/SpaceMono-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('../fontes/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@media (max-width: 720px) {
+    body {
+        padding: 0 8px;
+    }
+
+    .texto01,
+    .texto02 {
+        font-size: 18px;
+    }
+
+    .texto03 fieldset {
+        padding: 15px;
+    }
+
+    .titulo01 {
+        font-size: 40px;
+    }
+
+    .menu a {
+        display: inline-block;
+        margin: 6px 6px;
+        font-size: 14px;
+    }
+
+    .menu {
+        padding: 8px 0;
+        line-height: 1.4;
+        flex-wrap: wrap;
+    }
+}
+
+html {
+    background-color: #2b2b2b;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono';
+}
+
+.conteudo {
+    background-color: #1f1f1f;
+    color: white;
+    max-width: 792px;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid #cfa66c;
+    box-sizing: border-box;
+}
+
+p,
+h1,
+h2 {
+    overflow-wrap: break-word;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 792px;
+    width: 100%;
+    margin: 0 auto 15px auto;
+    text-align: center;
+    background-color: rgb(24, 23, 23);
+    border-bottom: 1px solid #c6964f;
+    box-sizing: border-box;
+}
+
+.menu a {
+    color: #d79b4a;
+    text-decoration: none;
+    margin: 0 25px;
+    font-weight: 792px;
+    font-size: 19px;
+    transition: color 0.2s;
+}
+
+.menu a:hover {
+    color: #ffbb55
+}
+
+.topo {
+    color: #c6964f;
+    text-decoration: none;
+    font-size: 10px;
+    font-family: 'Space Mono';
+    display: block;
+    text-align: right;
+    margin: 10px 10px 0 0;
+}
+
+.titulo01 {
+    text-align: center;
+    color: #d79b4a;
+    font-family: 'Space Mono';
+    font-size: 59px;
+}
+
+.titulo02 {
+    text-align: center;
+    color: wheat;
+    font-family: 'Space Mono';
+    font-style: italic;
+    font-size: 15px;
+    margin-top: 1px;
+}
+
+.titulo03 {
+    text-align: center;
+    color: #c6964f;
+    font-family: 'Space Mono';
+    font-size: 32px;
+    margin-bottom: 1px;
+}
+
+.texto01 {
+    text-align: justify;
+    max-width: 670px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    color: #f8f5e7;
+    font-family: 'Space Grotesk';
+    font-size: 23px;
+    line-height: 1.6;
+}
+
+.texto02 {
+    text-align: left;
+    color: #ffd59e;
+    font-family: 'Space Grotesk';
+    font-size: 20px;
+    max-width: 670px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 10px;
+    line-height: 1.6;
+    margin: 0 auto;
+}
+
+.texto03 {
+    text-align: center;
+    color: wheat;
+    font-family: 'Space Grotesk';
+    font-size: 11px;
+    font-style: italic;
+    max-width: 670px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+
+}
+
+.texto03 form,
+.texto03 fieldset {
+    border: 1px solid #c6964f;
+    border-radius: 6px;
+    background-color: #252525;
+    padding: 20px 40px;
+    margin: 0 auto;
+    max-width: 600px;
+    width: 90%;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;    
+}
+
+.texto03 legend {
+    color: #c6964f;
+    font-family: 'Space Mono';
+    font-size: 16px;    
+}
+
+.texto03 label {
+    width: 100%;
+    text-align: left;
+    margin-top: 6px;
+    color: wheat;
+    font-size: 15px;
+    display: block;    
+}
+
+.texto03 textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.texto03 select {
+     width: 25%;
+}
+
+.texto03 input[type="submit"] {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.image01 {
+    display: block;
+    margin: 0 auto;
+    max-width: 680px;
+    height: auto;
+    width: 100%;
+}
+
+.tabelas {
+    border-collapse: collapse;
+    width: 93%;
+    margin: 5px auto;
+    font-family: 'Space Grotesk';
+    color: wheat;
+    text-decoration: none;
+}
+
+.tabelas th {
+    border: 1px solid #c6964f;
+    color: #c6964f;
+    font-size: 16px;
+    padding: 8px;
+    text-align: left;
+}
+
+.tabelas td {
+    border: 1px solid #c6964f;
+    padding: 4px;
+    text-align: left;
+    font-size: 15px;
+}
