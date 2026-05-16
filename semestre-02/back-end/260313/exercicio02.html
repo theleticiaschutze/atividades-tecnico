@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01 - Par ou impar</title>
+</head>
+<body>
+    <script>
+        let permitida = prompt("Qual a velocidade permitida na via? ");
+        let velocidade = prompt("Qual a velocidade do condutor? ");
+        //isso troca a virgula por ponto pois o js só le ponto
+        permitida = permitida.replace(",", "."); 
+        velocidade = velocidade.replace(",", "."); 
+        //parseFloat é primo do Number mas ele ignora letras, se o usucario colocar letra o number da erro, o parseFloat não da erro
+        const via = parseFloat(permitida); 
+        const carro = parseFloat(velocidade);
+        const acima = ((carro * 100)/ via)-100 
+
+
+        if(acima <= 0){
+            alert("Sem Multa");
+        } else if(acima <= 20){
+            alert("Multa Leve");
+        } else{
+            alert("Multa grave");
+        }
+    </script>
+</body>
+</html>

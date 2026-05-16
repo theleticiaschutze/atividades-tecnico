@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 01 - fruta em vezes</title>
+</head>
+<body>
+    <script>
+        //pega a fruta e o número
+        const fruta = prompt("Qual o nome da fruta?");
+        let num = prompt("Quantas vezes? ");
+
+        const numero = parseFloat(num); //vira numero
+
+        let resposta = ""; //faz uma string para mostrar tudo
+
+        while(num>0){
+            if(num>1){
+                resposta = resposta + fruta + " * "
+            } else{ 
+                resposta = resposta + fruta + "."
+            }
+            num--;
+        }
+        alert(resposta); //mostra tudo no final
+
+    </script>
+</body>
+</html>

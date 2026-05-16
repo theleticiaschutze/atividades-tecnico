@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01 - Par ou impar</title>
+</head>
+<body>
+    <script>
+        let numero = prompt("Digite um número: ");
+        numero = numero.replace(",", ".");
+        const valor = parseFloat(numero);
+
+
+        if(valor%2==0){
+            alert("Número é par! " + `${valor.toFixed(2)}`)
+        } else {
+            alert("Número é impar! " + `${valor.toFixed(2)}`)
+        }
+    </script>
+</body>
+</html>

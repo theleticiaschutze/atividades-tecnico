@@ -1,0 +1,27 @@
+<script>
+    do {
+        limpar = Number(prompt("Digite: 0 - Sair / 1 - Limpar o Banco: "));
+
+        if (limpar == 0) {
+            break;
+        }
+
+        if (limpar == 1) {
+            localStorage.clear();
+        }
+
+    } while (isNaN(limpar));
+
+    let idade = 0;
+
+    if (localStorage.getItem("idade") == null) {
+        idade = Number(prompt("Digite sua idade:"));
+        localStorage.setItem("idade", idade);
+    } else {
+        idade = localStorage.getItem("idade", idade);
+        idade++;
+        localStorage.setItem("idade", idade);
+        alert(idade);
+    }
+
+</script>

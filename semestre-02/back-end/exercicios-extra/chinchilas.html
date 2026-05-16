@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de chinchilas!</title>
+</head>
+<body>
+    <script>
+       let totalChinchilas = Number(prompt("Qual o número inicial de chinchilas? (Mínimo 2)"));
+       let anos = Number(prompt("Quantos anos de criação?"));
+        //isso troca a virgula por ponto pois o js só le ponto
+
+        //parseFloat é primo do Number mas ele ignora letras, se o usucario colocar letra o number da erro, o parseFloat não da erro
+        if (totalChinchilas < 2 || isNaN(totalChinchilas) || isNaN(anos)) {
+            alert("Por favor, insira números válidos (mínimo 2 chinchilas).");
+        } else {
+            let resposta = ""; 
+            let anoAtual = 1; 
+
+            while (anoAtual <= anos) {
+                // Monta a frase para o ano atual
+                resposta += "Ano " + anoAtual + ": " + totalChinchilas + " chinchilas\n";
+                
+                // Lógica: A partir do segundo ano, a população triplica
+                totalChinchilas = totalChinchilas * 3;
+                
+                anoAtual++;
+            }
+
+            alert(resposta);
+        }
+    </script>
+</body>
+</html>

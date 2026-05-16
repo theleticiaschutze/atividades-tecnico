@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03 - Parquimetro</title>
+</head>
+<body>
+    <h1>Insira o tempo e valor depositado</h1>
+    <table>
+        <th>
+            <td>Valor (R$)</td>
+            <td>Tempo (min)</td>
+        </th>
+        <tr>
+            <td>1,00</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>1,75</td>
+            <td>60</td>
+        </tr>
+        <tr>
+            <td>3,00</td>
+            <td>120</td>
+        </tr>
+    </table>
+    <form>
+        <p>Valor total inserido:
+                <input type="text" id="ivalor" required>            
+                <label for="" class="form-label">Minutos</label>
+                <select class="form-select form-select-lg" name="" id="imin">
+                    <option selected>Select one</option>
+                    <option value="">30</option>
+                    <option value="">60</option>
+                    <option value="">120</option>
+                </select>
+        </p>
+        </p>
+        <input type="submit" value="Calcule">
+    </form>
+    <h3></h3>
+    <h4></h4>
+    
+    <script src="js/parquimetro.js"></script>
+    
+</body>
+</html>
